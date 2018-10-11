@@ -30,23 +30,23 @@
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.Btn_New = new DevComponents.DotNetBar.ButtonX();
+            this.Btn_Save = new DevComponents.DotNetBar.ButtonX();
             this.Btn_Edit = new DevComponents.DotNetBar.ButtonX();
-            this.Btn_Undo = new DevComponents.DotNetBar.ButtonX();
-            this.Btn_Print = new DevComponents.DotNetBar.ButtonX();
             this.Btn_Del = new DevComponents.DotNetBar.ButtonX();
+            this.Btn_Print = new DevComponents.DotNetBar.ButtonX();
+            this.Btn_Undo = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.DTP = new System.Windows.Forms.DateTimePicker();
+            this.Btn_Prev = new System.Windows.Forms.Button();
+            this.Btn_Next = new System.Windows.Forms.Button();
+            this.Btn_Last = new System.Windows.Forms.Button();
+            this.Btn_First = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtTransferNum = new System.Windows.Forms.TextBox();
+            this.TxtTranferID = new System.Windows.Forms.TextBox();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.DGV = new System.Windows.Forms.DataGridView();
-            this.TxtTranferID = new System.Windows.Forms.TextBox();
-            this.TxtTransferNum = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.DTP = new System.Windows.Forms.DateTimePicker();
-            this.Btn_Save = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -57,15 +57,16 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.Btn_New);
             this.groupPanel1.Controls.Add(this.Btn_Save);
+            this.groupPanel1.Controls.Add(this.Btn_Edit);
             this.groupPanel1.Controls.Add(this.Btn_Del);
             this.groupPanel1.Controls.Add(this.Btn_Print);
             this.groupPanel1.Controls.Add(this.Btn_Undo);
-            this.groupPanel1.Controls.Add(this.Btn_Edit);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel1.Location = new System.Drawing.Point(0, 397);
+            this.groupPanel1.Location = new System.Drawing.Point(0, 393);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(800, 53);
+            this.groupPanel1.Size = new System.Drawing.Size(539, 57);
             // 
             // 
             // 
@@ -92,62 +93,95 @@
             // 
             this.Btn_New.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.Btn_New.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_New.Location = new System.Drawing.Point(700, 397);
+            this.Btn_New.Image = global::Finance.Properties.Resources.if_new10_2162911;
+            this.Btn_New.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
+            this.Btn_New.Location = new System.Drawing.Point(444, 1);
             this.Btn_New.Name = "Btn_New";
-            this.Btn_New.Size = new System.Drawing.Size(99, 53);
-            this.Btn_New.TabIndex = 0;
+            this.Btn_New.Size = new System.Drawing.Size(85, 50);
+            this.Btn_New.TabIndex = 6;
             this.Btn_New.Text = "جديد";
-            this.Btn_New.Click += new System.EventHandler(this.Btn_New_Click);
+            this.Btn_New.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.Btn_New.Click += new System.EventHandler(this.Btn_New_Click_1);
+            // 
+            // Btn_Save
+            // 
+            this.Btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Save.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Save.Image = global::Finance.Properties.Resources.if_icons_save_1564526;
+            this.Btn_Save.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
+            this.Btn_Save.Location = new System.Drawing.Point(356, 1);
+            this.Btn_Save.Name = "Btn_Save";
+            this.Btn_Save.Size = new System.Drawing.Size(85, 50);
+            this.Btn_Save.TabIndex = 5;
+            this.Btn_Save.Text = "حفظ";
+            this.Btn_Save.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.Btn_Save.Visible = false;
+            this.Btn_Save.Click += new System.EventHandler(this.Btn_Save_Click);
             // 
             // Btn_Edit
             // 
             this.Btn_Edit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.Btn_Edit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Edit.Location = new System.Drawing.Point(599, -3);
+            this.Btn_Edit.Image = global::Finance.Properties.Resources.if_new_24_103173__1_;
+            this.Btn_Edit.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
+            this.Btn_Edit.Location = new System.Drawing.Point(268, 1);
             this.Btn_Edit.Name = "Btn_Edit";
-            this.Btn_Edit.Size = new System.Drawing.Size(99, 53);
+            this.Btn_Edit.Size = new System.Drawing.Size(85, 50);
             this.Btn_Edit.TabIndex = 1;
             this.Btn_Edit.Text = "تعديل";
-            // 
-            // Btn_Undo
-            // 
-            this.Btn_Undo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Undo.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Undo.Location = new System.Drawing.Point(500, -3);
-            this.Btn_Undo.Name = "Btn_Undo";
-            this.Btn_Undo.Size = new System.Drawing.Size(99, 53);
-            this.Btn_Undo.TabIndex = 2;
-            this.Btn_Undo.Text = "تراجع";
-            // 
-            // Btn_Print
-            // 
-            this.Btn_Print.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Print.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Print.Location = new System.Drawing.Point(401, -3);
-            this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(99, 53);
-            this.Btn_Print.TabIndex = 3;
-            this.Btn_Print.Text = "طباعة";
+            this.Btn_Edit.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             // 
             // Btn_Del
             // 
             this.Btn_Del.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.Btn_Del.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Del.Location = new System.Drawing.Point(302, -3);
+            this.Btn_Del.Image = global::Finance.Properties.Resources.if_f_cross_256_282471__1_;
+            this.Btn_Del.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
+            this.Btn_Del.Location = new System.Drawing.Point(4, 1);
             this.Btn_Del.Name = "Btn_Del";
-            this.Btn_Del.Size = new System.Drawing.Size(99, 53);
+            this.Btn_Del.Size = new System.Drawing.Size(85, 50);
             this.Btn_Del.TabIndex = 4;
             this.Btn_Del.Text = "حذف";
+            this.Btn_Del.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.Btn_Del.Click += new System.EventHandler(this.Btn_Del_Click);
+            // 
+            // Btn_Print
+            // 
+            this.Btn_Print.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Print.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Print.Image = global::Finance.Properties.Resources.if_BT_printer_905556;
+            this.Btn_Print.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
+            this.Btn_Print.Location = new System.Drawing.Point(92, 1);
+            this.Btn_Print.Name = "Btn_Print";
+            this.Btn_Print.Size = new System.Drawing.Size(85, 50);
+            this.Btn_Print.TabIndex = 3;
+            this.Btn_Print.Text = "طباعة";
+            this.Btn_Print.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            // 
+            // Btn_Undo
+            // 
+            this.Btn_Undo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Undo.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Undo.Image = global::Finance.Properties.Resources.if_063_Undo_183192;
+            this.Btn_Undo.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
+            this.Btn_Undo.Location = new System.Drawing.Point(180, 1);
+            this.Btn_Undo.Name = "Btn_Undo";
+            this.Btn_Undo.Size = new System.Drawing.Size(85, 50);
+            this.Btn_Undo.TabIndex = 2;
+            this.Btn_Undo.Text = "تراجع";
+            this.Btn_Undo.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.Btn_Undo.Visible = false;
+            this.Btn_Undo.Click += new System.EventHandler(this.Btn_Undo_Click);
             // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.DTP);
-            this.groupPanel2.Controls.Add(this.button4);
-            this.groupPanel2.Controls.Add(this.button3);
-            this.groupPanel2.Controls.Add(this.button2);
-            this.groupPanel2.Controls.Add(this.button1);
+            this.groupPanel2.Controls.Add(this.Btn_Prev);
+            this.groupPanel2.Controls.Add(this.Btn_Next);
+            this.groupPanel2.Controls.Add(this.Btn_Last);
+            this.groupPanel2.Controls.Add(this.Btn_First);
             this.groupPanel2.Controls.Add(this.label2);
             this.groupPanel2.Controls.Add(this.label1);
             this.groupPanel2.Controls.Add(this.TxtTransferNum);
@@ -155,7 +189,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(800, 104);
+            this.groupPanel2.Size = new System.Drawing.Size(539, 84);
             // 
             // 
             // 
@@ -178,15 +212,94 @@
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel2.TabIndex = 1;
             // 
+            // DTP
+            // 
+            this.DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTP.Location = new System.Drawing.Point(8, 9);
+            this.DTP.Name = "DTP";
+            this.DTP.Size = new System.Drawing.Size(79, 20);
+            this.DTP.TabIndex = 9;
+            this.DTP.ValueChanged += new System.EventHandler(this.DTP_ValueChanged);
+            // 
+            // Btn_Prev
+            // 
+            this.Btn_Prev.Image = global::Finance.Properties.Resources.if_icon_ios7_arrow_right_211607;
+            this.Btn_Prev.Location = new System.Drawing.Point(459, 9);
+            this.Btn_Prev.Name = "Btn_Prev";
+            this.Btn_Prev.Size = new System.Drawing.Size(32, 20);
+            this.Btn_Prev.TabIndex = 8;
+            this.Btn_Prev.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Next
+            // 
+            this.Btn_Next.Image = global::Finance.Properties.Resources.if_icon_ios7_arrow_left_211689;
+            this.Btn_Next.Location = new System.Drawing.Point(322, 9);
+            this.Btn_Next.Name = "Btn_Next";
+            this.Btn_Next.Size = new System.Drawing.Size(32, 20);
+            this.Btn_Next.TabIndex = 7;
+            this.Btn_Next.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Last
+            // 
+            this.Btn_Last.Image = global::Finance.Properties.Resources.if_double_arrow_left_383152;
+            this.Btn_Last.Location = new System.Drawing.Point(289, 9);
+            this.Btn_Last.Name = "Btn_Last";
+            this.Btn_Last.Size = new System.Drawing.Size(32, 20);
+            this.Btn_Last.TabIndex = 6;
+            this.Btn_Last.UseVisualStyleBackColor = true;
+            // 
+            // Btn_First
+            // 
+            this.Btn_First.Image = global::Finance.Properties.Resources.if_double_arrow_right_383079__1_;
+            this.Btn_First.Location = new System.Drawing.Point(491, 9);
+            this.Btn_First.Name = "Btn_First";
+            this.Btn_First.Size = new System.Drawing.Size(32, 20);
+            this.Btn_First.TabIndex = 5;
+            this.Btn_First.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(341, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "رقم القرار";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(93, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "التاريخ";
+            // 
+            // TxtTransferNum
+            // 
+            this.TxtTransferNum.Location = new System.Drawing.Point(106, 52);
+            this.TxtTransferNum.Name = "TxtTransferNum";
+            this.TxtTransferNum.Size = new System.Drawing.Size(229, 20);
+            this.TxtTransferNum.TabIndex = 1;
+            this.TxtTransferNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // TxtTranferID
+            // 
+            this.TxtTranferID.Location = new System.Drawing.Point(357, 9);
+            this.TxtTranferID.Name = "TxtTranferID";
+            this.TxtTranferID.Size = new System.Drawing.Size(100, 20);
+            this.TxtTranferID.TabIndex = 0;
+            this.TxtTranferID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // groupPanel3
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel3.Controls.Add(this.DGV);
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupPanel3.Location = new System.Drawing.Point(0, 104);
+            this.groupPanel3.Location = new System.Drawing.Point(0, 84);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(800, 293);
+            this.groupPanel3.Size = new System.Drawing.Size(539, 309);
             // 
             // 
             // 
@@ -215,107 +328,20 @@
             this.DGV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV.Location = new System.Drawing.Point(0, 0);
             this.DGV.Name = "DGV";
-            this.DGV.Size = new System.Drawing.Size(794, 287);
+            this.DGV.Size = new System.Drawing.Size(533, 303);
             this.DGV.TabIndex = 0;
-            // 
-            // TxtTranferID
-            // 
-            this.TxtTranferID.Location = new System.Drawing.Point(616, 9);
-            this.TxtTranferID.Name = "TxtTranferID";
-            this.TxtTranferID.Size = new System.Drawing.Size(100, 20);
-            this.TxtTranferID.TabIndex = 0;
-            // 
-            // TxtTransferNum
-            // 
-            this.TxtTransferNum.Location = new System.Drawing.Point(487, 52);
-            this.TxtTransferNum.Name = "TxtTransferNum";
-            this.TxtTransferNum.Size = new System.Drawing.Size(229, 20);
-            this.TxtTransferNum.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(215, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "التاريخ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(722, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "رقم القرار";
-            // 
-            // button4
-            // 
-            this.button4.Image = global::Finance.Properties.Resources.if_icon_ios7_arrow_right_211607;
-            this.button4.Location = new System.Drawing.Point(719, 9);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(32, 24);
-            this.button4.TabIndex = 8;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = global::Finance.Properties.Resources.if_icon_ios7_arrow_left_211689;
-            this.button3.Location = new System.Drawing.Point(583, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 24);
-            this.button3.TabIndex = 7;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Image = global::Finance.Properties.Resources.if_double_arrow_left_383152;
-            this.button2.Location = new System.Drawing.Point(548, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 24);
-            this.button2.TabIndex = 6;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::Finance.Properties.Resources.if_double_arrow_right_383079__1_;
-            this.button1.Location = new System.Drawing.Point(753, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 24);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // DTP
-            // 
-            this.DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DTP.Location = new System.Drawing.Point(9, 9);
-            this.DTP.Name = "DTP";
-            this.DTP.Size = new System.Drawing.Size(200, 20);
-            this.DTP.TabIndex = 9;
-            this.DTP.ValueChanged += new System.EventHandler(this.DTP_ValueChanged);
-            // 
-            // Btn_Save
-            // 
-            this.Btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Save.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Save.Location = new System.Drawing.Point(198, 0);
-            this.Btn_Save.Name = "Btn_Save";
-            this.Btn_Save.Size = new System.Drawing.Size(99, 53);
-            this.Btn_Save.TabIndex = 5;
-            this.Btn_Save.Text = "حفظ";
-            this.Btn_Save.Click += new System.EventHandler(this.Btn_Save_Click);
             // 
             // FRM_Transfer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(539, 450);
             this.Controls.Add(this.groupPanel3);
             this.Controls.Add(this.groupPanel2);
-            this.Controls.Add(this.Btn_New);
             this.Controls.Add(this.groupPanel1);
+            this.MaximizeBox = false;
             this.Name = "FRM_Transfer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "قرارات النقل";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
@@ -329,7 +355,6 @@
         #endregion
 
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
-        private DevComponents.DotNetBar.ButtonX Btn_New;
         private DevComponents.DotNetBar.ButtonX Btn_Del;
         private DevComponents.DotNetBar.ButtonX Btn_Print;
         private DevComponents.DotNetBar.ButtonX Btn_Undo;
@@ -337,15 +362,16 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
         private System.Windows.Forms.DataGridView DGV;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_First;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtTransferNum;
         private System.Windows.Forms.TextBox TxtTranferID;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Btn_Last;
+        private System.Windows.Forms.Button Btn_Next;
+        private System.Windows.Forms.Button Btn_Prev;
         private System.Windows.Forms.DateTimePicker DTP;
         private DevComponents.DotNetBar.ButtonX Btn_Save;
+        private DevComponents.DotNetBar.ButtonX Btn_New;
     }
 }

@@ -63,6 +63,26 @@ namespace Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_063_Undo_183192 {
+            get {
+                object obj = ResourceManager.GetObject("if_063_Undo_183192", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_BT_printer_905556 {
+            get {
+                object obj = ResourceManager.GetObject("if_BT_printer_905556", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_double_arrow_left_383152 {
             get {
                 object obj = ResourceManager.GetObject("if_double-arrow-left_383152", resourceCulture);
@@ -76,6 +96,26 @@ namespace Finance.Properties {
         internal static System.Drawing.Bitmap if_double_arrow_right_383079__1_ {
             get {
                 object obj = ResourceManager.GetObject("if_double-arrow-right_383079 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_f_cross_256_282471 {
+            get {
+                object obj = ResourceManager.GetObject("if_f-cross_256_282471", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_f_cross_256_282471__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_f-cross_256_282471 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +143,16 @@ namespace Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_icons_save_1564526 {
+            get {
+                object obj = ResourceManager.GetObject("if_icons_save_1564526", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Login_49249 {
             get {
                 object obj = ResourceManager.GetObject("if_Login_49249", resourceCulture);
@@ -123,9 +173,49 @@ namespace Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_new_24_103173 {
+            get {
+                object obj = ResourceManager.GetObject("if_new-24_103173", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_new_24_103173__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_new-24_103173 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_new10_216291 {
             get {
                 object obj = ResourceManager.GetObject("if_new10_216291", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_new10_216291__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_new10_216291 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_new10_2162911 {
+            get {
+                object obj = ResourceManager.GetObject("if_new10_2162911", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

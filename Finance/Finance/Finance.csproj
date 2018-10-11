@@ -137,5 +137,32 @@
   <ItemGroup>
     <None Include="Resources\if_icon-ios7-arrow-right_211607.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_new-24_103173.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_new-24_103173 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_new10_2162911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_new10_216291 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icons_save_1564526.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_063_Undo_183192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_BT_printer_905556.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_f-cross_256_282471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_f-cross_256_282471 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
