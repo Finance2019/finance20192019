@@ -116,6 +116,7 @@
     <None Include="Resources\if_new10_216291.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="123456789\" />
     <Folder Include="PL\Genral\" />
     <Folder Include="PL\Print\Add\" />
     <Folder Include="PL\Print\Genral\" />
