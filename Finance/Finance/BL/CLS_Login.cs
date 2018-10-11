@@ -13,16 +13,16 @@ namespace Finance.BL
     {
         #region كلاس الدخول على البرنامج
 
-        public DataTable Logins_Select(String TxtUserName, String UserPassWord,int AdminID)
+        public DataTable Logins_Select(String TxtUserName, String UserPassWord)
         {
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
-            SqlParameter[] param = new SqlParameter[3];
+            SqlParameter[] param = new SqlParameter[2];
             param[0] = new SqlParameter("@UserName", SqlDbType.NVarChar, 50);
             param[0].Value = TxtUserName;
             param[1] = new SqlParameter("@UserPassWord", SqlDbType.NVarChar, 50);
             param[1].Value = UserPassWord;
-            param[2] = new SqlParameter("@AdminID", SqlDbType.Int);
-            param[2].Value = AdminID;
+          //  param[2] = new SqlParameter("@AdminID", SqlDbType.Int);
+            //param[2].Value = AdminID;
 
             DAL.Open();
             DataTable dt = new DataTable();

@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\CLS_Login.cs" />
+    <Compile Include="BL\CLS_Transfer.cs" />
     <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="PL\Add\FRM_Transfer.cs">
       <SubType>Form</SubType>
@@ -123,6 +124,18 @@
     <Folder Include="PL\Print\Setting\" />
     <Folder Include="PL\Report\" />
     <Folder Include="PL\Setting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_double-arrow-right_383079 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_double-arrow-left_383152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-ios7-arrow-left_211689.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-ios7-arrow-right_211607.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -51,8 +51,8 @@
             // 
             this.ribbonControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ribbonControl1.CaptionVisible = true;
-            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel5);
             this.ribbonControl1.Controls.Add(this.ribbonPanel3);
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -85,6 +85,7 @@
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel2.Size = new System.Drawing.Size(926, 97);
             this.ribbonPanel2.TabIndex = 2;
+            this.ribbonPanel2.Visible = false;
             // 
             // Btn_Buy
             // 
@@ -136,7 +137,6 @@
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel1.Size = new System.Drawing.Size(926, 97);
             this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Visible = false;
             // 
             // ribbonPanel5
             // 
@@ -173,6 +173,7 @@
             // 
             // File
             // 
+            this.File.Checked = true;
             this.File.ImagePaddingHorizontal = 8;
             this.File.Name = "File";
             this.File.Panel = this.ribbonPanel1;
@@ -181,7 +182,6 @@
             // 
             // Rib_Add
             // 
-            this.Rib_Add.Checked = true;
             this.Rib_Add.ImagePaddingHorizontal = 8;
             this.Rib_Add.Name = "Rib_Add";
             this.Rib_Add.Panel = this.ribbonPanel2;

@@ -46,7 +46,7 @@ namespace Finance.PL
             #endregion
 
             #region عملية الدخول
-            DataTable dt = logins.Logins_Select(TxtUserName.Text, TxtUserPassWord.Text, 1);
+            DataTable dt = logins.Logins_Select(TxtUserName.Text, TxtUserPassWord.Text);
             if (dt.Rows.Count > 0)
             {
                 #region عملية فتح الفورم والصلاحيات فيما بعد

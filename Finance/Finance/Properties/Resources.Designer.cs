@@ -63,6 +63,46 @@ namespace Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_double_arrow_left_383152 {
+            get {
+                object obj = ResourceManager.GetObject("if_double-arrow-left_383152", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_double_arrow_right_383079__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_double-arrow-right_383079 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_icon_ios7_arrow_left_211689 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon-ios7-arrow-left_211689", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_icon_ios7_arrow_right_211607 {
+            get {
+                object obj = ResourceManager.GetObject("if_icon-ios7-arrow-right_211607", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Login_49249 {
             get {
                 object obj = ResourceManager.GetObject("if_Login_49249", resourceCulture);

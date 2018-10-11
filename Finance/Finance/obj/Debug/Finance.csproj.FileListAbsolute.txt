@@ -34,3 +34,16 @@ E:\Finance\Finance\obj\Debug\Finance.csproj.CoreCompileInputs.cache
 E:\Finance\Finance\obj\Debug\Finance.csproj.CopyComplete
 E:\Finance\Finance\obj\Debug\Finance.exe
 E:\Finance\Finance\obj\Debug\Finance.pdb
+E:\Git\finance2019\Finance\Finance\bin\Debug\Finance.exe.config
+E:\Git\finance2019\Finance\Finance\bin\Debug\Finance.exe
+E:\Git\finance2019\Finance\Finance\bin\Debug\Finance.pdb
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.csprojAssemblyReference.cache
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.PL.Add.FRM_Transfer.resources
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.PL.FRM_LOGIN.resources
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.PL.FRM_MAIN.resources
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.Properties.Resources.resources
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.csproj.GenerateResource.cache
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.csproj.CoreCompileInputs.cache
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.csproj.CopyComplete
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.exe
+E:\Git\finance2019\Finance\Finance\obj\Debug\Finance.pdb
