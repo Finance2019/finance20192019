@@ -166,5 +166,20 @@
   <ItemGroup>
     <None Include="Resources\if_f-cross_256_282471 %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Login Manager_3503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Login Manager_3503 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_interact_17009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_6-User_2672790.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_business_finance_money-25_2784220.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

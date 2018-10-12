@@ -121,6 +121,9 @@
   <data name="if_double-arrow-right_383079 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_double-arrow-right_383079 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_f-cross_256_282471 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_f-cross_256_282471 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_BT_printer_905556" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_BT_printer_905556.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,11 +136,17 @@
   <data name="if_double-arrow-left_383152" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_double-arrow-left_383152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_interact_17009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_interact_17009.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_Login Manager_3503 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Login Manager_3503 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_new10_216291" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_new10_216291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_063_Undo_183192" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_063_Undo_183192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_6-User_2672790" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_6-User_2672790.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_Login_49249" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_Login_49249.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +157,8 @@
   <data name="if_Login Manager_7261" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_Login Manager_7261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_icon-ios7-arrow-right_211607" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-ios7-arrow-right_211607.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_063_Undo_183192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_063_Undo_183192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_new10_216291 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_new10_216291 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,13 +169,19 @@
   <data name="if_icon-ios7-arrow-left_211689" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_icon-ios7-arrow-left_211689.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="if_icon-ios7-arrow-right_211607" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_icon-ios7-arrow-right_211607.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="if_new-24_103173" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_new-24_103173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="if_f-cross_256_282471" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\if_f-cross_256_282471.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_f-cross_256_282471 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_f-cross_256_282471 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="if_Login Manager_3503" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_Login Manager_3503.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_business_finance_money-25_2784220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_business_finance_money-25_2784220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

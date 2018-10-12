@@ -73,9 +73,29 @@ namespace Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_6_User_2672790 {
+            get {
+                object obj = ResourceManager.GetObject("if_6-User_2672790", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_BT_printer_905556 {
             get {
                 object obj = ResourceManager.GetObject("if_BT_printer_905556", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_business_finance_money_25_2784220 {
+            get {
+                object obj = ResourceManager.GetObject("if_business_finance_money-25_2784220", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +173,39 @@ namespace Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_interact_17009 {
+            get {
+                object obj = ResourceManager.GetObject("if_interact_17009", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Login_49249 {
             get {
                 object obj = ResourceManager.GetObject("if_Login_49249", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Login_Manager_3503 {
+            get {
+                object obj = ResourceManager.GetObject("if_Login Manager_3503", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Login_Manager_3503__1_ {
+            get {
+                object obj = ResourceManager.GetObject("if_Login Manager_3503 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
