@@ -117,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="123456789\" />
+    <Folder Include="esraa\" />
     <Folder Include="PL\Genral\" />
     <Folder Include="PL\Print\Add\" />
     <Folder Include="PL\Print\Genral\" />
