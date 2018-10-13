@@ -106,5 +106,12 @@ namespace Finance.PL
             //frm.Show();
 
         }
+
+        private void Btn_Sale_Back_Click(object sender, EventArgs e)
+        {
+            PL.Add.FRM_Transfer frm = new  Add.FRM_Transfer();
+            frm.MdiParent = this.MdiParent;
+            frm.Show();
+        }
     }
 }

@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
-            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
+            this.Btn_Buy = new DevComponents.DotNetBar.ButtonX();
+            this.Btn_Sales = new DevComponents.DotNetBar.ButtonX();
+            this.Btn_Transfer = new DevComponents.DotNetBar.ButtonX();
             this.Btn_Buy_Back = new DevComponents.DotNetBar.ButtonX();
-            this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonPanel3 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonPanel5 = new DevComponents.DotNetBar.RibbonPanel();
+            this.Btn_Users = new DevComponents.DotNetBar.ButtonX();
             this.File = new DevComponents.DotNetBar.RibbonTabItem();
             this.Rib_Add = new DevComponents.DotNetBar.RibbonTabItem();
             this.Rib_Report = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem4 = new DevComponents.DotNetBar.RibbonTabItem();
-            this.Btn_Buy = new DevComponents.DotNetBar.ButtonX();
-            this.Btn_Sales = new DevComponents.DotNetBar.ButtonX();
-            this.Btn_Sale_Back = new DevComponents.DotNetBar.ButtonX();
-            this.Btn_Users = new DevComponents.DotNetBar.ButtonX();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel5.SuspendLayout();
@@ -72,22 +72,12 @@
             this.ribbonControl1.Text = "ribbonControl1";
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
-            // ribbonPanel1
-            // 
-            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel1.Location = new System.Drawing.Point(0, 55);
-            this.ribbonPanel1.Name = "ribbonPanel1";
-            this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(926, 97);
-            this.ribbonPanel1.TabIndex = 1;
-            // 
             // ribbonPanel2
             // 
             this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonPanel2.Controls.Add(this.Btn_Buy);
             this.ribbonPanel2.Controls.Add(this.Btn_Sales);
-            this.ribbonPanel2.Controls.Add(this.Btn_Sale_Back);
+            this.ribbonPanel2.Controls.Add(this.Btn_Transfer);
             this.ribbonPanel2.Controls.Add(this.Btn_Buy_Back);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonPanel2.Location = new System.Drawing.Point(0, 55);
@@ -96,6 +86,44 @@
             this.ribbonPanel2.Size = new System.Drawing.Size(926, 97);
             this.ribbonPanel2.TabIndex = 2;
             this.ribbonPanel2.Visible = false;
+            // 
+            // Btn_Buy
+            // 
+            this.Btn_Buy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Buy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Buy.Image = global::Finance.Properties.Resources.if_Login_Manager_3503__1_;
+            this.Btn_Buy.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.Btn_Buy.Location = new System.Drawing.Point(830, 0);
+            this.Btn_Buy.Name = "Btn_Buy";
+            this.Btn_Buy.Size = new System.Drawing.Size(94, 95);
+            this.Btn_Buy.TabIndex = 10;
+            this.Btn_Buy.Text = "موظفين";
+            this.Btn_Buy.Click += new System.EventHandler(this.Btn_Buy_Click);
+            // 
+            // Btn_Sales
+            // 
+            this.Btn_Sales.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Sales.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Sales.Image = global::Finance.Properties.Resources.if_business_finance_money_25_2784220;
+            this.Btn_Sales.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.Btn_Sales.Location = new System.Drawing.Point(642, 0);
+            this.Btn_Sales.Name = "Btn_Sales";
+            this.Btn_Sales.Size = new System.Drawing.Size(94, 95);
+            this.Btn_Sales.TabIndex = 8;
+            this.Btn_Sales.Text = "جزاءات";
+            // 
+            // Btn_Transfer
+            // 
+            this.Btn_Transfer.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Transfer.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Transfer.Image = global::Finance.Properties.Resources.if_interact_17009;
+            this.Btn_Transfer.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.Btn_Transfer.Location = new System.Drawing.Point(736, 0);
+            this.Btn_Transfer.Name = "Btn_Transfer";
+            this.Btn_Transfer.Size = new System.Drawing.Size(94, 95);
+            this.Btn_Transfer.TabIndex = 7;
+            this.Btn_Transfer.Text = "تنقلات";
+            this.Btn_Transfer.Click += new System.EventHandler(this.Btn_Sale_Back_Click);
             // 
             // Btn_Buy_Back
             // 
@@ -106,6 +134,27 @@
             this.Btn_Buy_Back.Size = new System.Drawing.Size(94, 95);
             this.Btn_Buy_Back.TabIndex = 9;
             this.Btn_Buy_Back.Text = "مردودات المشتريات";
+            // 
+            // ribbonPanel3
+            // 
+            this.ribbonPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel3.Location = new System.Drawing.Point(0, 55);
+            this.ribbonPanel3.Name = "ribbonPanel3";
+            this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel3.Size = new System.Drawing.Size(926, 97);
+            this.ribbonPanel3.TabIndex = 6;
+            this.ribbonPanel3.Visible = false;
+            // 
+            // ribbonPanel1
+            // 
+            this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel1.Location = new System.Drawing.Point(0, 55);
+            this.ribbonPanel1.Name = "ribbonPanel1";
+            this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel1.Size = new System.Drawing.Size(926, 97);
+            this.ribbonPanel1.TabIndex = 1;
             // 
             // ribbonPanel5
             // 
@@ -119,16 +168,17 @@
             this.ribbonPanel5.TabIndex = 5;
             this.ribbonPanel5.Visible = false;
             // 
-            // ribbonPanel3
+            // Btn_Users
             // 
-            this.ribbonPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel3.Location = new System.Drawing.Point(0, 0);
-            this.ribbonPanel3.Name = "ribbonPanel3";
-            this.ribbonPanel3.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel3.Size = new System.Drawing.Size(926, 152);
-            this.ribbonPanel3.TabIndex = 6;
-            this.ribbonPanel3.Visible = false;
+            this.Btn_Users.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Btn_Users.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Btn_Users.Image = global::Finance.Properties.Resources.if_6_User_2672790;
+            this.Btn_Users.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.Btn_Users.Location = new System.Drawing.Point(829, 0);
+            this.Btn_Users.Name = "Btn_Users";
+            this.Btn_Users.Size = new System.Drawing.Size(94, 95);
+            this.Btn_Users.TabIndex = 25;
+            this.Btn_Users.Text = "المستخدميـــــــن";
             // 
             // File
             // 
@@ -160,55 +210,6 @@
             this.ribbonTabItem4.Panel = this.ribbonPanel5;
             this.ribbonTabItem4.Text = "الاعــــــــــــدادات";
             // 
-            // Btn_Buy
-            // 
-            this.Btn_Buy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Buy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Buy.Image = global::Finance.Properties.Resources.if_Login_Manager_3503__1_;
-            this.Btn_Buy.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.Btn_Buy.Location = new System.Drawing.Point(830, 0);
-            this.Btn_Buy.Name = "Btn_Buy";
-            this.Btn_Buy.Size = new System.Drawing.Size(94, 95);
-            this.Btn_Buy.TabIndex = 10;
-            this.Btn_Buy.Text = "موظفين";
-            this.Btn_Buy.Click += new System.EventHandler(this.Btn_Buy_Click);
-            // 
-            // Btn_Sales
-            // 
-            this.Btn_Sales.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Sales.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Sales.Image = global::Finance.Properties.Resources.if_business_finance_money_25_2784220;
-            this.Btn_Sales.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.Btn_Sales.Location = new System.Drawing.Point(642, 0);
-            this.Btn_Sales.Name = "Btn_Sales";
-            this.Btn_Sales.Size = new System.Drawing.Size(94, 95);
-            this.Btn_Sales.TabIndex = 8;
-            this.Btn_Sales.Text = "عقوبات";
-            // 
-            // Btn_Sale_Back
-            // 
-            this.Btn_Sale_Back.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Sale_Back.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Sale_Back.Image = global::Finance.Properties.Resources.if_interact_17009;
-            this.Btn_Sale_Back.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.Btn_Sale_Back.Location = new System.Drawing.Point(736, 0);
-            this.Btn_Sale_Back.Name = "Btn_Sale_Back";
-            this.Btn_Sale_Back.Size = new System.Drawing.Size(94, 95);
-            this.Btn_Sale_Back.TabIndex = 7;
-            this.Btn_Sale_Back.Text = "تنقلات";
-            // 
-            // Btn_Users
-            // 
-            this.Btn_Users.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Btn_Users.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Btn_Users.Image = global::Finance.Properties.Resources.if_6_User_2672790;
-            this.Btn_Users.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.Btn_Users.Location = new System.Drawing.Point(829, 0);
-            this.Btn_Users.Name = "Btn_Users";
-            this.Btn_Users.Size = new System.Drawing.Size(94, 95);
-            this.Btn_Users.TabIndex = 25;
-            this.Btn_Users.Text = "المستخدميـــــــن";
-            // 
             // FRM_MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,7 +234,7 @@
         private DevComponents.DotNetBar.RibbonControl ribbonControl1;
         private DevComponents.DotNetBar.RibbonPanel ribbonPanel2;
         private DevComponents.DotNetBar.ButtonX Btn_Sales;
-        private DevComponents.DotNetBar.ButtonX Btn_Sale_Back;
+        private DevComponents.DotNetBar.ButtonX Btn_Transfer;
         private DevComponents.DotNetBar.ButtonX Btn_Buy_Back;
         private DevComponents.DotNetBar.RibbonPanel ribbonPanel1;
         private DevComponents.DotNetBar.RibbonTabItem File;

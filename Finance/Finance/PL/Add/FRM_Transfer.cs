@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Finance.PL.Add
 {
@@ -146,7 +147,14 @@ namespace Finance.PL.Add
 
                     #region الحفظ
 
-                   //كود الحفظ -- جديد
+                    //كود الحفظ -- جديد
+                    trans.TransferHD_Add(
+                        Convert.ToInt32(TxtTranferID.Text.Trim()),
+                        Convert.ToInt32(TxtTransferNum.Text.Trim()),
+                        DTP.Value,
+                       Convert.ToInt32( Program.loginDt.Rows[0][2].ToString())
+                   
+                        );
 
                     #endregion
 
@@ -155,7 +163,13 @@ namespace Finance.PL.Add
                 else
                 {
                     #region تعديل
-                    //كود الحفظ -- تعديل
+                    trans.TransferHD_Update(
+                                          Convert.ToInt32(TxtTranferID.Text.Trim()),
+                                          Convert.ToInt32(TxtTransferNum.Text.Trim()),
+                                          DTP.Value,
+                                         Convert.ToInt32(Program.loginDt.Rows[0][2].ToString())
+
+                                          );
                     #endregion
 
                 }
@@ -232,16 +246,19 @@ namespace Finance.PL.Add
             #region الحذف
             try
             {
+                if (TxtTranferID.Text == string.Empty.Trim())
+                {
+                    return;
+                }
+
 
                 #region عملية الحذف ورسالة التاكيد عليها 
                 DialogResult m = MessageBox.Show("هل انت متأكد من عملية الحذف", "تحذير", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (m == DialogResult.OK)
                 {
                     #region عملية الحذف
-                    //
+                    trans.TransferHD_Del(Convert.ToInt32(TxtTranferID.Text));
                     ClearAll();
-                    MessageBox.Show("تم الحذف بنجاح", "حذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    #endregion
                 }
                 else
                 {
@@ -262,6 +279,52 @@ namespace Finance.PL.Add
 
 
             #endregion
+            #endregion
+
+
+        }
+
+        private void TxtTransferNum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            #region منع كتابة الحروف داخل المبلغ
+            try
+            {
+                if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != Convert.ToChar(CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator))
+                {
+                    e.Handled = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+
+            #endregion
+
+        }
+
+        private void Btn_Edit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (TxtTranferID.Text==string.Empty.Trim())
+                {
+                    return;
+                }
+                stat = "edit";
+                BTN_Disable();
+                Txt_Enable();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
 
         }
     }

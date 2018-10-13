@@ -130,6 +130,7 @@
             this.Btn_Edit.TabIndex = 1;
             this.Btn_Edit.Text = "تعديل";
             this.Btn_Edit.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.Btn_Edit.Click += new System.EventHandler(this.Btn_Edit_Click);
             // 
             // Btn_Del
             // 
@@ -262,7 +263,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(341, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "رقم القرار";
             // 
@@ -271,7 +272,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(93, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "التاريخ";
             // 
@@ -282,6 +283,7 @@
             this.TxtTransferNum.Size = new System.Drawing.Size(229, 20);
             this.TxtTransferNum.TabIndex = 1;
             this.TxtTransferNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtTransferNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTransferNum_KeyPress);
             // 
             // TxtTranferID
             // 
