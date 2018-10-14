@@ -10,6 +10,20 @@ namespace Finance.BL
 {
     class CLS_Transfer
     {
+        #region كلاس جميع السجلات
+
+        public DataTable TransferHD_All( )
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DAL.Open();
+            DataTable dt = new DataTable();
+            dt = DAL.SelectData("TransferHD_All", null);
+            return dt;
+        }
+
+        #endregion
+
+
         #region جلب رقم جديد للسجل
         public DataTable TransferHD_NewID()
         {
@@ -115,7 +129,6 @@ namespace Finance.BL
 
 
         #endregion
-
 
     }
 }

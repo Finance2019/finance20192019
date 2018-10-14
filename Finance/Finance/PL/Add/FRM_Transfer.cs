@@ -32,6 +32,7 @@ namespace Finance.PL.Add
 
         #region متغير نص
         string stat = "xxx";
+        int ID_;
         #endregion
 
         #region تفعيل  جميع الازرار 
@@ -44,6 +45,11 @@ namespace Finance.PL.Add
             Btn_Save.Visible = false;
             Btn_Undo.Visible = false;
             Btn_Print.Visible = true;
+            Btn_First.Visible = true;
+            Btn_Prev.Visible = true;
+            Btn_Next.Visible = true;
+            Btn_Last.Visible = true;
+
         }
 
         #endregion
@@ -58,6 +64,11 @@ namespace Finance.PL.Add
             Btn_Save.Visible = true;
             Btn_Undo.Visible = true;
             Btn_Print.Visible = false;
+            Btn_First.Visible = false;
+            Btn_Prev.Visible = false;
+            Btn_Next.Visible = false;
+            Btn_Last.Visible = false;
+
         }
 
         #endregion
@@ -68,6 +79,7 @@ namespace Finance.PL.Add
         {
 
             TxtTransferNum.ReadOnly = false;
+            TxtTranferID.ReadOnly = true;
             DTP.Enabled = true;
         }
 
@@ -79,16 +91,32 @@ namespace Finance.PL.Add
         {
 
             TxtTransferNum.ReadOnly = true;
+            TxtTranferID.ReadOnly = false;
             DTP.Enabled = false;
         }
 
         #endregion
 
+        #region التنقل 
+
+        public void Move(int rec)
+        {
+            DataTable transDT = trans.TransferHD_All();
+            TxtTranferID.Text = transDT.Rows[rec][0].ToString();
+            TxtTransferNum.Text = transDT.Rows[rec][1].ToString();
+            DTP.Text = transDT.Rows[rec][2].ToString();
+        }
+
         #endregion
 
+
+        #endregion
+
+        #region العمليات التى تتم على الفورم
         public FRM_Transfer()
         {
             InitializeComponent();
+           
         }
 
         private void DTP_ValueChanged(object sender, EventArgs e)
@@ -280,8 +308,6 @@ namespace Finance.PL.Add
 
             #endregion
             #endregion
-
-
         }
 
         private void TxtTransferNum_KeyPress(object sender, KeyPressEventArgs e)
@@ -308,6 +334,7 @@ namespace Finance.PL.Add
 
         private void Btn_Edit_Click(object sender, EventArgs e)
         {
+            #region تعديل
             try
             {
                 if (TxtTranferID.Text==string.Empty.Trim())
@@ -325,7 +352,113 @@ namespace Finance.PL.Add
                 MessageBox.Show(ex.ToString());
             }
 
+            #endregion
+        }
+
+        private void Btn_First_Click(object sender, EventArgs e)
+        {
+            #region زرار اول سجل
+            try
+            {
+
+                ////للمراجعة فيما بعد
+                //if (ID_ == 0 || TxtTranferID.Text != string.Empty.Trim())
+                //{
+                //    return;
+                //}
+                ID_ = 0;
+                Move(ID_);
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+                
+            }
+            #endregion
+        }
+
+        private void Btn_Last_Click(object sender, EventArgs e)
+        {
+            #region زرار اخر سجل
+            try
+            {
+                if (ID_ == trans.TransferHD_All().Rows.Count - 1)
+                {
+                    return;
+                }
+                ID_ = trans.TransferHD_All().Rows.Count - 1;
+                Move(ID_);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+
+            }
+
+            #endregion
+        }
+
+        private void Btn_Prev_Click(object sender, EventArgs e)
+        {
+            #region زرار السابق
+            try
+            {
+                if (ID_ == 0)
+                {
+                    return;
+                }
+
+                ID_ -= 1;
+                Move(ID_);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+
+            }
+
+            #endregion
+        }
+
+        private void Btn_Next_Click(object sender, EventArgs e)
+        {
+            #region زرار التالى
+            try
+            {
+                if (ID_ == trans.TransferHD_All().Rows.Count - 1)
+                {
+                    return;
+                }
+
+                ID_ += 1;
+                Move(ID_);
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+
+            }
+
+            #endregion
+        }
+
+        private void Btn_Print_Click(object sender, EventArgs e)
+        {
+            #region طباعة
+
+            #endregion
 
         }
+        #endregion
     }
+
 }

@@ -158,6 +158,7 @@
             this.Btn_Print.TabIndex = 3;
             this.Btn_Print.Text = "طباعة";
             this.Btn_Print.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
             // 
             // Btn_Undo
             // 
@@ -230,6 +231,7 @@
             this.Btn_Prev.Size = new System.Drawing.Size(32, 20);
             this.Btn_Prev.TabIndex = 8;
             this.Btn_Prev.UseVisualStyleBackColor = true;
+            this.Btn_Prev.Click += new System.EventHandler(this.Btn_Prev_Click);
             // 
             // Btn_Next
             // 
@@ -239,6 +241,7 @@
             this.Btn_Next.Size = new System.Drawing.Size(32, 20);
             this.Btn_Next.TabIndex = 7;
             this.Btn_Next.UseVisualStyleBackColor = true;
+            this.Btn_Next.Click += new System.EventHandler(this.Btn_Next_Click);
             // 
             // Btn_Last
             // 
@@ -248,6 +251,7 @@
             this.Btn_Last.Size = new System.Drawing.Size(32, 20);
             this.Btn_Last.TabIndex = 6;
             this.Btn_Last.UseVisualStyleBackColor = true;
+            this.Btn_Last.Click += new System.EventHandler(this.Btn_Last_Click);
             // 
             // Btn_First
             // 
@@ -257,6 +261,7 @@
             this.Btn_First.Size = new System.Drawing.Size(32, 20);
             this.Btn_First.TabIndex = 5;
             this.Btn_First.UseVisualStyleBackColor = true;
+            this.Btn_First.Click += new System.EventHandler(this.Btn_First_Click);
             // 
             // label2
             // 
