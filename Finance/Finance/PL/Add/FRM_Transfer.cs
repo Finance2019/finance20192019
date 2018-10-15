@@ -14,7 +14,77 @@ namespace Finance.PL.Add
     public partial class FRM_Transfer : Form
 
     {
+        #region نسخة الكلاس
+
+        BL.CLS_Transfer trans = new BL.CLS_Transfer();
+
+        #endregion
+
         #region متغيرات عامة على الفورم
+
+        #region مكونات الداتا جريد
+        public void DGV_Column()
+        {
+         #region رقم الموظف
+         DataGridViewTextBoxColumn AdminID = new DataGridViewTextBoxColumn();
+         AdminID.DataPropertyName = "AdminID";
+         AdminID.HeaderText = "رقم الموظف";
+         AdminID.Width = 70;
+            #endregion
+
+         #region اسم الموظف
+            DataGridViewTextBoxColumn AdminName = new DataGridViewTextBoxColumn();
+            AdminName.DataPropertyName = "AdminName";
+            AdminName.HeaderText = "اسم الموظف";
+            AdminName.Width = 150;
+            AdminName.ReadOnly = true;
+            #endregion
+
+         #region رقم الوحدة 
+            DataGridViewTextBoxColumn AccountUnitsID = new DataGridViewTextBoxColumn();
+            AccountUnitsID.DataPropertyName = "AccountUnitsID";
+            AccountUnitsID.HeaderText = "رقم الوحدة";
+            AccountUnitsID.Width = 50;
+            #endregion
+
+         #region اسم  الوحدة 
+            DataGridViewTextBoxColumn AccountUnitsName = new DataGridViewTextBoxColumn();
+            AccountUnitsName.DataPropertyName = "AccountUnitsName";
+            AccountUnitsName.HeaderText = "اسم الوحدة المحول منها";
+            AccountUnitsName.Width = 105;
+            AccountUnitsName.ReadOnly = true;
+            #endregion
+
+         #region رقم الوحدة 
+            DataGridViewTextBoxColumn AccountUnitsID2 = new DataGridViewTextBoxColumn();
+            AccountUnitsID2.DataPropertyName = "AccountUnitsID2";
+            AccountUnitsID2.HeaderText = "رقم الوحدة";
+            AccountUnitsID2.Width = 50;
+            #endregion
+
+         #region اسم  الوحدة 
+            DataGridViewTextBoxColumn AccountUnitsName2 = new DataGridViewTextBoxColumn();
+            AccountUnitsName2.DataPropertyName = "AccountUnitsName2";
+            AccountUnitsName2.HeaderText = "اسم الوحدة المحول اليها";
+            AccountUnitsName2.Width = 105;
+            AccountUnitsName2.ReadOnly = true;
+            #endregion
+
+         #region اضافات الاعمدة
+            DGV.Columns.Add(AdminID);
+            DGV.Columns.Add(AdminName);
+            DGV.Columns.Add(AccountUnitsID);
+            DGV.Columns.Add(AccountUnitsName);
+            DGV.Columns.Add(AccountUnitsID2);
+            DGV.Columns.Add(AccountUnitsName2);
+
+
+            #endregion
+        }
+
+
+
+        #endregion
 
         #region مسح التكست بوكس
         public void ClearAll()
@@ -24,11 +94,6 @@ namespace Finance.PL.Add
         }
         #endregion
 
-        #region نسخة الكلاس
-
-        BL.CLS_Transfer trans = new BL.CLS_Transfer();
-
-        #endregion
 
         #region متغير نص
         string stat = "xxx";
@@ -116,7 +181,10 @@ namespace Finance.PL.Add
         public FRM_Transfer()
         {
             InitializeComponent();
-           
+
+            DGV_Column();
+
+
         }
 
         private void DTP_ValueChanged(object sender, EventArgs e)
@@ -183,10 +251,7 @@ namespace Finance.PL.Add
                        Convert.ToInt32( Program.loginDt.Rows[0][2].ToString())
                    
                         );
-
                     #endregion
-
-
                 }
                 else
                 {
@@ -199,9 +264,8 @@ namespace Finance.PL.Add
 
                                           );
                     #endregion
-
                 }
-
+              
                 //DGV_All_Search();
 
 
@@ -459,6 +523,12 @@ namespace Finance.PL.Add
 
         }
         #endregion
+
+        private void DGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DGV.BeginEdit(true);
+
+        }
     }
 
 }

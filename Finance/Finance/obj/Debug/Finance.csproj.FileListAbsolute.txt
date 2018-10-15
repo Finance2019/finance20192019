@@ -99,3 +99,6 @@ E:\Git\A12\Finance\Finance\obj\Debug\Finance.csproj.CoreCompileInputs.cache
 E:\Git\A12\Finance\Finance\obj\Debug\Finance.csproj.CopyComplete
 E:\Git\A12\Finance\Finance\obj\Debug\Finance.exe
 E:\Git\A12\Finance\Finance\obj\Debug\Finance.pdb
+E:\Git\A12\Finance\Finance\obj\Debug\Finance.PL.Add.FRM_Admin.resources
+E:\Git\A12\Finance\Finance\obj\Debug\Finance.PL.Genral.FRM_AccUnitSearch.resources
+E:\Git\A12\Finance\Finance\obj\Debug\Finance.PL.Genral.FRM_AdminSearch.resources

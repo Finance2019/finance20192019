@@ -21,7 +21,10 @@ namespace Finance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.FRM_LOGIN());
+           // Application.Run(new PL.FRM_LOGIN());
+           // Application.Run(new PL.Add.FRM_Transfer());
+            Application.Run(new PL.Add.FRM_Admin());
+
         }
     }
 }

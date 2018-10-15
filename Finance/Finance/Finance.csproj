@@ -51,11 +51,29 @@
     <Compile Include="BL\CLS_Login.cs" />
     <Compile Include="BL\CLS_Transfer.cs" />
     <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\Add\FRM_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Add\FRM_Admin.Designer.cs">
+      <DependentUpon>FRM_Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Add\FRM_Transfer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\Add\FRM_Transfer.Designer.cs">
       <DependentUpon>FRM_Transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Genral\FRM_AccUnitSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Genral\FRM_AccUnitSearch.Designer.cs">
+      <DependentUpon>FRM_AccUnitSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Genral\FRM_AdminSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Genral\FRM_AdminSearch.Designer.cs">
+      <DependentUpon>FRM_AdminSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Main\FRM_LOGIN.cs">
       <SubType>Form</SubType>
@@ -71,8 +89,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\Add\FRM_Admin.resx">
+      <DependentUpon>FRM_Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Add\FRM_Transfer.resx">
       <DependentUpon>FRM_Transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Genral\FRM_AccUnitSearch.resx">
+      <DependentUpon>FRM_AccUnitSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Genral\FRM_AdminSearch.resx">
+      <DependentUpon>FRM_AdminSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Main\FRM_LOGIN.resx">
       <DependentUpon>FRM_LOGIN.cs</DependentUpon>
@@ -116,7 +143,6 @@
     <None Include="Resources\if_new10_216291.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PL\Genral\" />
     <Folder Include="PL\Print\Add\" />
     <Folder Include="PL\Print\Genral\" />
     <Folder Include="PL\Print\Main\" />
