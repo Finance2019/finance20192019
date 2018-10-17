@@ -15,6 +15,11 @@ namespace Finance
         /// </summary>
         public static DataTable loginDt;
 
+        public static string  TempTxt;
+
+        public static DataTable GlobalDT;
+
+
         [STAThread]
 
         static void Main()
@@ -23,7 +28,7 @@ namespace Finance
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new PL.FRM_LOGIN());
            // Application.Run(new PL.Add.FRM_Transfer());
-            Application.Run(new PL.Add.FRM_Admin());
+            Application.Run(new PL.Add.FRM_Transfer());
 
         }
     }

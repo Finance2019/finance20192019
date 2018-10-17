@@ -49,8 +49,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\CLS_Login.cs" />
+    <Compile Include="BL\CLS_Search.cs" />
     <Compile Include="BL\CLS_Transfer.cs" />
     <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\Add\FRM_AccUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Add\FRM_AccUnits.Designer.cs">
+      <DependentUpon>FRM_AccUnits.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Add\FRM_Admin.cs">
       <SubType>Form</SubType>
     </Compile>

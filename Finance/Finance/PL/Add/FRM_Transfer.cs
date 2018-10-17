@@ -17,6 +17,8 @@ namespace Finance.PL.Add
         #region نسخة الكلاس
 
         BL.CLS_Transfer trans = new BL.CLS_Transfer();
+        BL.CLS_Search search_ = new BL.CLS_Search();
+
 
         #endregion
 
@@ -119,6 +121,33 @@ namespace Finance.PL.Add
 
         #endregion
 
+        #region ادراج اسم الموظف ورقمه
+      public void AdminInsert()
+        {
+            if (Program.GlobalDT != null)
+            {
+                this.DGV.CurrentRow.Cells[0].Value = Program.GlobalDT.Rows[0][0];
+                this.DGV.CurrentRow.Cells[1].Value = Program.GlobalDT.Rows[0][1];
+            }
+        }
+
+        #endregion
+
+
+        #region مسح الصف
+       public void RowClear()
+        {
+                this.DGV.CurrentRow.Cells[0].Value = null;
+                this.DGV.CurrentRow.Cells[1].Value = null;
+                this.DGV.CurrentRow.Cells[2].Value = null;
+                this.DGV.CurrentRow.Cells[3].Value = null;
+                this.DGV.CurrentRow.Cells[4].Value = null;
+                this.DGV.CurrentRow.Cells[5].Value = null;
+
+
+        }
+      
+        #endregion
         #region تعطيل  جميع الازرار 
 
         public void BTN_Disable()
@@ -528,6 +557,38 @@ namespace Finance.PL.Add
         {
             DGV.BeginEdit(true);
 
+        }
+
+        private void DGV_CellValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            #region ادراج اسم ورقم الموظف
+
+            //ثلاث حالات
+            //الحالة الاولى عدم وجود الاسم
+            if (DGV.CurrentCell.ColumnIndex == 0 && DGV.Rows[e.RowIndex].Cells[0].Value == null)
+            {
+                RowClear();
+            }
+
+            // الحالة الثانية في حالة وجود مقترح واحد للموظف
+            if (DGV.CurrentCell.ColumnIndex == 0 && DGV.Rows[e.RowIndex].Cells[0].Value != null)
+            {
+                Program.GlobalDT= search_.Admins_Search(this.DGV.CurrentRow.Cells[0].Value.ToString());
+                AdminInsert();
+
+
+            }
+
+            //// الحالة الثانية في حالة وجوداكثر من  مقترح واحد للموظف
+            //if (DGV.CurrentCell.ColumnIndex == 0 && DGV.Rows[e.RowIndex].Cells[0].Value != null)
+            //{
+            //    Program.GlobalDT = search_.Admins_Search(this.DGV.CurrentRow.Cells[0].ToString());
+            //}
+
+
+
+
+            #endregion
         }
     }
 

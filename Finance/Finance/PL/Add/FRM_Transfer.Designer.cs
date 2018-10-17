@@ -353,6 +353,7 @@
             this.DGV.Size = new System.Drawing.Size(533, 303);
             this.DGV.TabIndex = 0;
             this.DGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellClick);
+            this.DGV.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellValidated);
             // 
             // FRM_Transfer
             // 
