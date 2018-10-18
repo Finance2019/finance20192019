@@ -136,6 +136,9 @@
             this.DGV_AdminSearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV_AdminSearch.Size = new System.Drawing.Size(377, 266);
             this.DGV_AdminSearch.TabIndex = 3;
+            this.DGV_AdminSearch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_AdminSearch_CellContentClick);
+            this.DGV_AdminSearch.DoubleClick += new System.EventHandler(this.DGV_AdminSearch_DoubleClick);
+            this.DGV_AdminSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DGV_AdminSearch_KeyDown);
             // 
             // FRM_AdminSearch
             // 
@@ -156,9 +159,9 @@
 
         #endregion
 
-        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private DevComponents.DotNetBar.Controls.TextBoxX TxtTxtSearch;
-        private DevComponents.DotNetBar.LabelX LBL_NameSearch;
-        private DevComponents.DotNetBar.Controls.DataGridViewX DGV_AdminSearch;
+        public DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
+        public DevComponents.DotNetBar.Controls.TextBoxX TxtTxtSearch;
+        public DevComponents.DotNetBar.LabelX LBL_NameSearch;
+        public DevComponents.DotNetBar.Controls.DataGridViewX DGV_AdminSearch;
     }
 }

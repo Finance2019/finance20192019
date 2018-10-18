@@ -569,12 +569,32 @@ namespace Finance.PL.Add
             {
                 RowClear();
             }
-
-            // الحالة الثانية في حالة وجود مقترح واحد للموظف
+            // حالات الكتابة داخل
             if (DGV.CurrentCell.ColumnIndex == 0 && DGV.Rows[e.RowIndex].Cells[0].Value != null)
             {
                 Program.GlobalDT= search_.Admins_Search(this.DGV.CurrentRow.Cells[0].Value.ToString());
-                AdminInsert();
+                if (Program.GlobalDT.Rows.Count==0)
+                {
+                    RowClear();
+                }
+                if (Program.GlobalDT.Rows.Count == 1)
+                {
+                    AdminInsert();
+                }
+
+                if (Program.GlobalDT.Rows.Count > 1)
+                {
+                    PL.Genral.FRM_AdminSearch frm = new Genral.FRM_AdminSearch();
+                    frm.ShowDialog();
+                    if (frm.insertRow == true)
+                    {
+                        RowClear();
+                        this.DGV.CurrentRow.Cells[0].Value = frm.DGV_AdminSearch.CurrentRow.Cells[0].Value;
+                        this.DGV.CurrentRow.Cells[1].Value = frm.DGV_AdminSearch.CurrentRow.Cells[1].Value;
+
+                    }
+                }
+
 
 
             }
