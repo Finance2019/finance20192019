@@ -203,11 +203,10 @@ namespace Finance.PL.Add
 
         #endregion
 
+    #endregion
 
-        #endregion
-
-        #region العمليات التى تتم على الفورم
-        public FRM_Transfer()
+    #region العمليات التى تتم على الفورم
+    public FRM_Transfer()
         {
             InitializeComponent();
 
@@ -569,11 +568,12 @@ namespace Finance.PL.Add
             {
                 RowClear();
             }
-            // حالات الكتابة داخل
+            // حالات الكتابة داخل المربع ووجود  حالتين
             if (DGV.CurrentCell.ColumnIndex == 0 && DGV.Rows[e.RowIndex].Cells[0].Value != null)
             {
-                Program.GlobalDT= search_.Admins_Search(this.DGV.CurrentRow.Cells[0].Value.ToString());
-                if (Program.GlobalDT.Rows.Count==0)
+                Program.GlobalDT = null;
+                Program.GlobalDT = search_.Admins_Search(this.DGV.CurrentRow.Cells[0].Value.ToString());
+                if (Program.GlobalDT.Rows.Count == 0)
                 {
                     RowClear();
                 }
@@ -585,6 +585,7 @@ namespace Finance.PL.Add
                 if (Program.GlobalDT.Rows.Count > 1)
                 {
                     PL.Genral.FRM_AdminSearch frm = new Genral.FRM_AdminSearch();
+                    frm.TxtTxtSearch.Text = this.DGV.CurrentRow.Cells[0].Value.ToString();
                     frm.ShowDialog();
                     if (frm.insertRow == true)
                     {
@@ -598,15 +599,6 @@ namespace Finance.PL.Add
 
 
             }
-
-            //// الحالة الثانية في حالة وجوداكثر من  مقترح واحد للموظف
-            //if (DGV.CurrentCell.ColumnIndex == 0 && DGV.Rows[e.RowIndex].Cells[0].Value != null)
-            //{
-            //    Program.GlobalDT = search_.Admins_Search(this.DGV.CurrentRow.Cells[0].ToString());
-            //}
-
-
-
 
             #endregion
         }

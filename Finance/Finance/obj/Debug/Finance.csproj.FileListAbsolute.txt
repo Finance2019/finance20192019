@@ -102,3 +102,6 @@ E:\Git\A12\Finance\Finance\obj\Debug\Finance.pdb
 E:\Git\A12\Finance\Finance\obj\Debug\Finance.PL.Add.FRM_Admin.resources
 E:\Git\A12\Finance\Finance\obj\Debug\Finance.PL.Genral.FRM_AccUnitSearch.resources
 E:\Git\A12\Finance\Finance\obj\Debug\Finance.PL.Genral.FRM_AdminSearch.resources
+F:\A11\finance20192019\Finance\Finance\obj\Debug\Finance.PL.Add.FRM_Admin.resources
+F:\A11\finance20192019\Finance\Finance\obj\Debug\Finance.PL.Genral.FRM_AccUnitSearch.resources
+F:\A11\finance20192019\Finance\Finance\obj\Debug\Finance.PL.Genral.FRM_AdminSearch.resources

@@ -19,10 +19,12 @@ namespace Finance.DAL
 
             public DataAccessLayer()
             {
-                SqlConnection = new SqlConnection(@"Server=DESKTOP-B07CB1K\SQLEXPRESS;Database=00;integrated security=True");
+              //  SqlConnection = new SqlConnection(@"Server=DESKTOP-B07CB1K\SQLEXPRESS;Database=00;integrated security=True");
+               SqlConnection = new SqlConnection(@"Server=ADMIN-PC\SQLEXPRESS;Database=00;integrated security=True");
+
             }
 
-            public void Open()
+        public void Open()
             {
                 if (SqlConnection.State != ConnectionState.Open)
                 {

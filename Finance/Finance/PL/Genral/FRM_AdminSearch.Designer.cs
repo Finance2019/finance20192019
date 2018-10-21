@@ -150,6 +150,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FRM_AdminSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "البحث في الموظفين";
             this.groupPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_AdminSearch)).EndInit();
